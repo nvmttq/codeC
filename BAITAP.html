@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        font-size: 150%;
+    }
+    span{
+        
+        font-size: 16px;
+    }
+    p{
+        font-size: 1rem;
+    }
+</style>
+<body>
+    <div class="box">
+            
+    </div>
+
+    <script>
+        
+
+        var boxElement = document.querySelector('.box');
+        console.log([boxElement]);
+    // nodeType = 1 ------ ElementNode
+    // nodeType = 2 ------ AttributesNode
+    // nodeType = 3 ------ TextNode
+
+
+        boxElement.style.width = '100px';
+        boxElement.style.height = '100px';
+        boxElement.style.backgroundColor = '#333';
+
+        Object.assign(boxElement.style, {
+            width : '200px',
+            height : '200px',
+            backgroundColor : 'red'
+        })
+        console.log(boxElement.classList)
+        // add remove toogle contains
+        var x = 2 + "1";
+        console.log( x);
+
+        var course = [
+            {
+                name : 'PHP',
+                coin : 250,
+            },
+            {
+                name : 'JAVA',
+                coin : 100,
+            },
+            {
+                name : 'CCCC',
+                coin : 150
+            }
+        ];
+    var y = course.reduce(function(sum,current) {
+        return current.coin + sum; 
+    },0)
+    console.log(y);
+    </script>
+</body>
+
+</html>

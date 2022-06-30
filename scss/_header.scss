@@ -1,0 +1,22 @@
+.header{
+    max-width: 1160px;
+    margin: 0 auto;
+    background-color:aqua;
+}
+.navbar{
+    padding: 40px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    &-img{
+        height: 40px;
+    }
+    &-text{
+        cursor: pointer;
+
+    }
+}

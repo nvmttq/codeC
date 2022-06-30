@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Học web chuẩn</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+  var i = 2;
+$(function(){
+  $('button').click(function() {
+    $('.code').append('<div>New item</div>');
+    var x = "line-" + i++;
+    $('.code div:last-child').addClass(x);
+  });
+});
+</script>
+
+    <style>
+        .code{
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div class ="line">
+  <div class = "line-1"> </div>
+</div>
+
+    <textarea id="" cols="30" rows="10" class="code">
+        <div class = "line-1">fddddddddddddBdd </div>
+    </textarea>
+<button type="button">Add</button>
+</body>
+</html>

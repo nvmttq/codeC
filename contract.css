@@ -1,0 +1,107 @@
+body {
+    background-color: #9e9e9e;
+}
+
+.container-view-1 {
+    margin: 13px auto;
+    background-color: white;
+    width: 893px;
+    min-height: 1262px;
+}
+
+.header-form {
+}
+
+.header-title {
+    font-weight: bold;
+    color: #1e6b5b;
+}
+i{
+    color: #777777;
+}
+.col-dra-cal{
+    color: #1e6b5b;
+}
+.bg-dra-cal{
+    background: #1e6b5b;
+}
+.bg-silver{
+    background-color: #cacaca;
+}
+.square{
+    height: 22px;
+    width: 22px;
+    background: #cacaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1px;
+}
+.square p{
+    margin: 0px;
+    padding: 0px;
+}
+.normal-font-size{
+    font-size: 12px;
+}
+.small-font-size{
+    font-size: 11px;
+}
+.text-justify{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.text-note{
+    font-size: 12px;
+    padding-top: 10px;
+}
+.text-section{
+    background-color: #c1e0e3;
+    font-weight: 500;
+    padding: 3px;
+}
+.text-note:not(.text-section){
+    font-weight: bold;
+}
+.account{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.account-Intermediary, .account-Beneficiary{
+    width: 48%;
+}
+
+input{
+    border: none;
+    outline: none;
+    background-color: #c1e0e3;
+    padding-left: 5px;
+    font-weight: 600;
+    
+
+}
+.title{
+    color: #2e6a59;
+}
+.title-form{
+    width: 40%;
+}
+.ip-form{
+    width: 100%;
+}
+
+.title-nor{
+    color: rgb(87, 87, 87);
+    font-weight: 600;
+}
+.title-ita{
+    font-style: italic;
+    color: grey;
+    font-weight: 500;
+}
+.form-heading{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}

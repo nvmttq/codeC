@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  color: black;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.hero {
+  max-width: 1440px;
+}
+
+.header {
+  max-width: 1160px;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+.navbar {
+  padding: 40px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 40px;
+}
+.logo-text {
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 0 50px;
+}
+
+/*# sourceMappingURL=app.css.map */
