@@ -17,7 +17,6 @@ using namespace std;
 #define pii pair<int, int>
 #define vi vector<int>
 #define vll vector<ll>
-#define npos 18446744073709551615
 #define fast_int_out ios_base::sync_with_stdio(false); cin.tie(NULL);
 #define int long long
 const char nl = '\n';
@@ -25,21 +24,29 @@ const int maxN = 3e5 + 7;
 const int minN = 1e5 + 10;
 const int mod = 1e9 + 7;
 const int INF = 1e18;
-void solve(){
 
-}
-int cmp(int a,int b){
-    return a>b;
-}
-void swap(ll *p1, ll *p2)
-{
-   ll temp=*p1;
-   *p1=*p2;
-   *p2=temp;
+
+void solve(){
+	int n,k; cin >> n >> k;
+	
+	int mx_ltK = -INF;
+	int mx_gtK = -INF;
+	int num_t_gtK = 0;
+	while(n--){
+		int f,t; cin >> f >> t;
+		if(t > k){
+			mx_gtK = max(f - (t - k),mx_gtK);
+		}
+		else{
+			mx_ltK = max(f,mx_ltK);
+		}
+	}
+	cout << max(mx_gtK,mx_ltK);
 }
 signed main(){
 	fast_int_out
-
+//	tc{solve(); cout << nl;}
+	solve();
 	return 0;
 }
 
